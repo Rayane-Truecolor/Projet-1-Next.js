@@ -1,5 +1,6 @@
 import { IconProps } from '@/types/iconProps';
 import clsx from 'clsx';
+import { Spinner } from '../spinner/spinner';
 
 interface Props {
 size?: "small" | "medium" | "large" 
@@ -81,7 +82,19 @@ switch (size) {
     return(
         <>
         <button
-            type="button" className={clsx(variantStyles, sizeStyles, icoSize)} onClick={() => console.log('click')} disabled={disabled}>
+            type="button" className={clsx(variantStyles, sizeStyles, icoSize, isLoading && "cursor-wait", "relative")} onClick={() => console.log('click')} disabled={disabled}>
+
+                {isLoading && (
+                    
+                        <div className="absolute inset-0 flex items-center justify-center">
+
+                        {variant === "accent" || variant === "ico" ? (<Spinner size="small" variant="white" />) : (<Spinner size="small" />)}
+                        
+                    
+                    </div>
+                )}
+                
+                <div className={clsx(isLoading && "invisible")}>
                 {icon && variant === "ico" ? (
                 <icon.icon size={icoSize}/>
                 ) : (
@@ -98,6 +111,7 @@ switch (size) {
                      )}
                     </div>
                     )}
+                    </div>
         </button>
         </>
     )

@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 interface Props {
   size?: "small" | "medium" | "large";
   variant?: "primary" | "white";
@@ -26,18 +28,17 @@ export const Spinner = ({ size = "medium", variant = "primary" }: Props) => {
 
   switch (variant) {
     case "primary": //Primary
-      sizeStyles = "";
+      variantStyles = "text-primary";
       break;
 
     case "white":
-      sizeStyles = "";
+      variantStyles = "text-white";
       break;
   }
   return (
     <svg
       role="spinner"
-      className="w-10 h-10"
-      //className={clsx(sizeStyle, variantStyles; "animate-spin")}
+      className={clsx(sizeStyles, variantStyles, "animate-spin")}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
