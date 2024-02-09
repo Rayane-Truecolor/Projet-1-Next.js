@@ -1,5 +1,7 @@
 import { Seo } from "@/ui/components/seo";
+import { Avatar } from "@/ui/design-system/avatar/avatar";
 import { Button } from "@/ui/design-system/button/button";
+import { Logo } from "@/ui/design-system/logo/logo";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { RiAncientGateFill, RiUser6Fill } from "react-icons/ri";
@@ -8,38 +10,69 @@ export default function Home() {
   return (
     <>
       <Seo title="Coders Monkeys" description="Description..." />
-<div className="max-w-6xl mx-auto space-y-5 py-10">
-      {/*Typography*/}
-      <div className="space-y-5">
-        <Typography>Coders Monkeys</Typography>
-        <Typography theme="primary" variant="h1" component="div">
-          Coders Monkeys
-        </Typography>
-        <Typography theme="secondary" variant="lead" component="div">
-          Coders Monkeys
-        </Typography>
-        <Typography variant="body-sm" component="div">
-          Coders Monkeys
-        </Typography>
-        <Typography variant="caption4" component="div">
-          Coders Monkeys
-        </Typography>
-        <Typography variant="caption4" weight="medium" component="div">
-          Coders Monkeys
-        </Typography>
-      </div>
-
-      <div className="flex items-start gap-7">
-        {/*Spinners*/}
-        <div className="space-y-2">
-          <Typography variant="caption2" weight="medium">
-            Spinners
+      <div className="max-w-6xl mx-auto space-y-5 py-10">
+        {/*Typography*/}
+        <div className="space-y-5">
+          <Typography>Coders Monkeys</Typography>
+          <Typography theme="primary" variant="h1" component="div">
+            Coders Monkeys
           </Typography>
+          <Typography theme="secondary" variant="lead" component="div">
+            Coders Monkeys
+          </Typography>
+          <Typography variant="body-sm" component="div">
+            Coders Monkeys
+          </Typography>
+          <Typography variant="caption4" component="div">
+            Coders Monkeys
+          </Typography>
+          <Typography variant="caption4" weight="medium" component="div">
+            Coders Monkeys
+          </Typography>
+        </div>
 
-          <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-            <Spinner size="small" />
-            <Spinner />
-            <Spinner size="large" />
+        <div className="flex items-start gap-7">
+          {/*Spinners*/}
+          <div className="space-y-2">
+            <Typography variant="caption2" weight="medium">
+              Spinners
+            </Typography>
+
+            <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+              <Spinner size="small" />
+              <Spinner />
+              <Spinner size="large" />
+            </div>
+          </div>
+
+          {/*Avatar*/}
+          <div className="space-y-2">
+            <Typography variant="caption2" weight="medium">
+            Avatar
+            </Typography>
+
+            <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+              <Avatar size="small" src="/assets/images/grande-image.jpg"  alt="Avatar de Daniel Lincoln"/>
+              <Avatar size="medium" src="/assets/images/grande-image.jpg" alt="Avatar de Daniel Lincoln"/>
+              <Avatar size="large" src="/assets/images/grande-image.jpg"  alt="Avatar de Daniel Lincoln"/>
+            </div>
+          </div>
+
+
+          {/*Logo*/}
+          <div className="space-y-2">
+            <Typography variant="caption2" weight="medium">
+              Logo
+            </Typography>
+
+            <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+              <Logo size="very-small" />
+              <Logo size="small" />
+              <Logo size="medium" />
+              <Logo size="large" />
+
+
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +155,6 @@ export default function Home() {
             iconTheme="secondary"
           />
         </div>
-      </div>
       </div>
     </>
   );
