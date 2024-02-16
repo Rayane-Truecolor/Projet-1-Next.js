@@ -109,7 +109,7 @@ export const Typography = ({
         colorStyles,
         weight === "medium" && "font-medium",
         className,
-        "text-8xl text-primary"
+        "text-8xl"
       )}
     >
       {children}
