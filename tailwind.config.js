@@ -23,6 +23,7 @@ module.exports = {
       },
 
       gray: {
+        300: "#fafafa",
         400: "#f2f2f2",
         500: "#e5e5e5",
         600: "#b2b2b2",
@@ -65,6 +66,30 @@ module.exports = {
           fontWeight: "500",
         },
       ],
+      "4xl": [
+        "36px",
+        { 
+          lineHeight: "44px",
+          letterSpacing: "-1.2000000476837158px",
+          fontWeight: "500",
+        },
+      ],
+      "3xl": [
+        "24px",
+        {
+          lineHeight: "30px",
+          letterSpacing: "-0.800000011920929px",
+          fontWeight: "400",
+        },
+      ],
+      "2xl": [
+        "24px",
+        {
+          lineHeight: "30px",
+          letterSpacing: "-1px",
+          fontWeight: "400",
+        },
+      ],
       xl: [
         "24px",
         {
@@ -77,7 +102,7 @@ module.exports = {
         "21px",
         {
           lineHeight: "30px",
-          letterSpacing: "-0.800000011920929px",
+          letterSpacing: "-1px",
           fontWeight: "400",
         },
       ],

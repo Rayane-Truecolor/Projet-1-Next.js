@@ -9,14 +9,19 @@ import { Layout } from "@/ui/components/layout/layout";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { RiAncientGateFill, RiUser6Fill } from "react-icons/ri";
 import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.container";
+import { ForgetPasswordContainer } from "@/ui/modules/authentication/forget-password/forget-password.container";
 
-export default function Home() {
+export default function ForgetPassword() {
   return (
     <>
-      <Seo title="Coders Monkeys" description="Description..." />
+      <Seo
+        title="Inscription sur Coders Monkeys"
+        description="Page d'inscription"
+      />
 
-<Layout isDisplayBreadCrumbs={false}><LandingPageContainer/></Layout>
-
+      <Layout>
+        <ForgetPasswordContainer />
+      </Layout>
     </>
   );
 }

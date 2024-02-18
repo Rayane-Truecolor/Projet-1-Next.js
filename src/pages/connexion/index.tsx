@@ -9,14 +9,19 @@ import { Layout } from "@/ui/components/layout/layout";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { RiAncientGateFill, RiUser6Fill } from "react-icons/ri";
 import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.container";
+import { LoginContainer } from "@/ui/modules/authentication/login/login.container";
 
-export default function Home() {
+export default function Connexion() {
   return (
     <>
-      <Seo title="Coders Monkeys" description="Description..." />
+      <Seo
+        title="Connexion sur Coders Monkeys"
+        description="Page de connexion"
+      />
 
-<Layout isDisplayBreadCrumbs={false}><LandingPageContainer/></Layout>
-
+      <Layout>
+        <LoginContainer />
+      </Layout>
     </>
   );
 }

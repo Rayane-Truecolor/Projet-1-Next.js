@@ -51,10 +51,10 @@ export const Typography = ({
       variantStyles = "text-4xl";
       break;
     case "h5":
-      variantStyles = "text-3xl";
+      variantStyles = "text-2xl";
       break;
     case "lead":
-      variantStyles = "text-2xl";
+      variantStyles = "text-xl";
       break;
     case "body-lg":
       variantStyles = "text-lg";
