@@ -13,7 +13,6 @@ export const Breadcrumbs = () => {
   const lastSegment = segments[segments.length - 1];
   segments[0] = "acceuil";
 
-  console.log("segments", segments);
   const view = segments.map((path, index) => (
     <div key={uuidv4()} className="flex items-center">
         <Link href={
