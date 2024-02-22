@@ -32,14 +32,7 @@ export const LoginForm = ({form}: Props) => {
          errorMsg = "Tu dois renseigner ce champ"
          id="password"
         />
-         <Input 
-         isLoading={isLoading}
-         placeholder="Comment nous as-tu connu ?"
-         register={register}
-         errors={errors}
-         errorMsg = "Tu dois renseigner ce champ"
-         id="how_did_hear"
-        />
+        
         <Button isLoading={isLoading} type="submit" fullWith>Connexion</Button>
       </form>
     ) 
